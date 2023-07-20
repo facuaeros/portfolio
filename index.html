@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Facundo Rodriguez</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">SKILLS TOOLS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>FACUNDO RODRIGUEZ</h1>
+            <h2>Paid Media-Google Ads Specialist  Desarrollador front end</h2>
+            <div class="redes">
+                <a href="https://api.whatsapp.com/send?phone=+541126092551&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/facunrodriguez23/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:facurodriguez.ads@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>
+                <a href="https://www.linkedin.com/in/facundo-nicolas-rodriguez-18a7ba218/" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Facundo Rodriguez.</span> Apasionado del marketing digital y especialista en Google Ads. También tengo habilidades en desarrollo web. Mi enfoque es crear estrategias efectivas para maximizar el ROI y mejorar la experiencia del usuario en línea. ¡Listo para nuevos desafíos!</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            03-01-1989
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54-2609-2551
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            facurodriguez.ads@gmail.com
+                        </li>
+                        
+                        <li>
+                            <strong>Dirección</strong>
+                            Banfield, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Account Strategist Google ads</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span>MARKETING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span>DISEÑO</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a class="descarga" href="cv.pdf" download="cv">
+                    Descargar CV
+                </a>
+             <i class="fa-solid fa-download"></i>
+                
+               
+
+                <span class="overlay"></span>
+            </button>
+            
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Google ads</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SEO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Social Ads </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de conflictos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Instituto Buenos Aires</span>
+                        <span class="fecha">2003 - 2006</span>
+                        <p>Durante la secundaria, adquirí conocimientos y habilidades para enfrentar desafíos académicos.Forjé amistades duraderas. La escuela secundaria fue una etapa de descubrimiento personal y desarrollo intelectual que me preparó para el futuro.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Python y Django</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2021</span>
+                        <p>Aprendí los fundamentos de Python, incluyendo estructuras de datos, funciones y programación orientada a objetos. Además, me familiaricé con frameworks populares como Django o Flask .</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador web</h4>
+                        <span class="casa">UTN-Argentina programa 2.0</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>En el curso inicial de desarrollador web, obtuve una visión integral del mundo del desarrollo web. Aprendí los fundamentos de HTML, CSS y JavaScript, que me permitieron crear sitios web con contenido atractivo y diseños responsivos,  comprendí cómo utilizar herramientas esenciales y bibliotecas como Bootstrap para acelerar el proceso de desarrollo. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Administrativo - Capacitador</h4>
+                        <span class="casa">PERSONAL-TELECOM
+                        </span>
+                        <span class="fecha">2016 - 2020</span>
+                        <p>Como administrativo y capacitador de producto, gestioné tareas administrativas clave y facilité sesiones de capacitación sobre nuestros productos. Coordiné agendas, mantuve registros y diseñé materiales de capacitación para el equipo. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Help Desk</h4>
+                        <span class="casa">Intec Soft</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Trabajé como soporte de sistemas de gestión ERP y manejé bases de datos SQL. Mi función consistía en brindar asistencia técnica a los usuarios del ERP, resolviendo problemas y proporcionando soluciones eficientes. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Google Ads Specialist </h4>
+                        <span class="casa">Atento, in behalf of GOOGLE</span>
+                        <span class="fecha">2021 - Actualmente</span>
+                        <p> especialista de Google Ads, encargado de diseñar y ejecutar estrategias publicitarias efectivas en esta plataforma. Mi objetivo es maximizar el rendimiento de las campañas, aumentar la visibilidad en línea y generar un retorno de inversión positivo para nuestros clientes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>SKILLS TOOLS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Google Analytics</h3>
+                        <p>Obtener y analizar datos valiosos sobre el tráfico y comportamiento de los usuarios en sitios web.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Tag Manager</h3>
+                        <p>Etiquetas de seguimiento y códigos </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Google ads</h3>
+                        <p>Selección de palabras clave, segmentación de audiencias y establecimiento de presupuestos adecuados. </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Bootstrap</h3>
+                        <p>Bootstrap es un popular framework de front-end que me permite crear interfaces visuales modernas y atractivas de manera eficiente.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Looker Studio</h3>
+                        <p>Conozco cómo utilizar Looker Studio para crear informes personalizados, paneles interactivos y gráficos dinámicos que facilitan la interpretación de datos complejos. </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo Web</h3>
+                        <p>Mi conocimiento en desarrollo web me permite abordar proyectos desafiantes y adaptarme a las últimas tendencias y tecnologías</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO 
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa --
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://api.whatsapp.com/send?phone=+541126092551&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/facunrodriguez23/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:facurodriguez.ads@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>
+            <a href="https://www.linkedin.com/in/facundo-nicolas-rodriguez-18a7ba218/" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
